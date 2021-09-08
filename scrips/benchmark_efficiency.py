@@ -119,7 +119,7 @@ parser.add_argument(
     "-n",
     "--nb-threads",
     metavar="N",
-    help="the maximum number of threads, in power of 2 (default to 2)",
+    help="the maximum number of threads (default to 2)",
     type=int,
     default=2,
     dest="nb_threads",

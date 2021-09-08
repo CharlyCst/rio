@@ -1,0 +1,27 @@
+[package]
+name = "experiments"
+version = "0.1.0"
+authors = ["CharlyCst <charly.castes@inria.fr>"]
+edition = "2018"
+
+[[bin]]
+name = "counter"
+path = "src/counter.rs"
+
+[[bin]]
+name = "counter_deps"
+path = "src/counter_deps.rs"
+
+[[bin]]
+name = "lu_counter"
+path = "src/lu_counter.rs"
+
+[[bin]]
+name = "mm_counter"
+path = "src/mm_counter.rs"
+
+[dependencies]
+clap = "3.0.0-beta.2" # CLI arg parser
+lazy_static = "1.4.0"
+rio = { path = "../rio" }
+

@@ -1,0 +1,9 @@
+[package]
+name = "rio"
+version = "0.1.0"
+authors = ["CharlyCst <charly.castes@inria.fr>"]
+edition = "2018"
+
+[dependencies]
+crossbeam = "0.8.1"
+

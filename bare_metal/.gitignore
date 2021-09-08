@@ -1,0 +1,12 @@
+mm
+mm_mkl
+mm_tiled
+mm_tiled_mkl
+counter
+lu_mkl
+lu_tiled
+lu_tiled_mkl
+time_mm_mkl
+lu_counter
+mm_counter
+*.o

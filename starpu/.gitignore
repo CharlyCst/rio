@@ -1,0 +1,7 @@
+a.out
+*.so
+*.o
+counter
+counter_deps
+lu_counter
+mm_counter

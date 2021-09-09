@@ -21,7 +21,7 @@ The repository is organized as follow:
 Compiling and running the benchmarks require the following dependencies (in
 parenthesis are the versions we used):
 
-- A C compiler (10.2.0)
+- A C compiler (gcc 10.2.0)
 - A Rust compiler (rustc 1.51)
 - StarPU (1.3.8)
 - hwloc (2.4.1)

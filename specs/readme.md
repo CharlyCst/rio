@@ -11,11 +11,12 @@ installed. The code was tested with java 11 but might work with other versions.
 
 ## Model Checking
 
-The two specification come with models (`STFModelChecker.tla` &
-`RunInOrderModelChecker.tla`) that give concrete values to the `Workers`,
-`Dara`, `Tasks`, `ControlFlow` and `Mapping` variables and can be use to verify
-that the properties of the specification are ensured for all possible
-executions given these concrete values.
+The two specification come with models (`STFModelChecker` &
+`RunInOrderModelChecker`) that give concrete values to the `Workers`, `Data`,
+`Tasks`, `ControlFlow` and `Mapping` variables and can be use to verify that the
+properties of the specification are ensured for all possible executions given
+these concrete values. These models comes with different sizes (2x2, 3x2 and
+3x3), the bigger the model, the longer it takes to check its correctness.
 
 The models can be check with the TLC model checker, distributed with the TLA
 toolbox. For ease of use the toolbox can be downloaded using the
@@ -30,10 +31,10 @@ corresponding script:
 
 ```sh
 # Check the STF model
-./check_stf.sh
+./check_stf2x2.sh
 
 # Check the Run-In-Order model
-./check_rio.sh
+./check_rio2x2.sh
 ```
 
 ## Properties
@@ -52,9 +53,10 @@ the orders accepter by the STF model (i.e. it respects sequential consistency).
 
 ## Modifying the models
 
-The concrete values of the models are defined in `STFModelChecker.tla` and
-`RunInOrderModelChecker.tla`. To check the specifications with different values
-only those files need to be edited. `STFModelChecker.tla` configures the model
-for checking the STF specification while `RunInOrderModelChecker.tla`
-configures the model for the Run-In-Order specification.
+The concrete values of the models are defined in `STFModelCheckerAxB.tla` and
+`RunInOrderModelCheckerAxB.tla`, where A and B are integers corresponding to
+matrices sizes. To check the specifications with different values only those
+files need to be edited. `STFModelCheckerAxB.tla` configures the model for
+checking the STF specification while `RunInOrderModelCheckerAxB.tla` configures
+the model for the Run-In-Order specification.
 
